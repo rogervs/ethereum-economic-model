@@ -22,4 +22,4 @@ sys.path.append("../../..")
 pd.options.mode.chained_assignment = 'raise'
 
 # Set plotly as the default plotting backend for pandas
-pd.options.plotting.backend = "plotly"
+# pd.options.plotting.backend = "plotly"
