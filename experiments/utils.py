@@ -4,9 +4,9 @@ import collections
 import inspect
 import numpy as np
 
-from IPython.display import Code
-from pygments.formatters import HtmlFormatter
-from IPython.core.display import HTML
+# from IPython.display import Code
+# from pygments.formatters import HtmlFormatter
+# from IPython.core.display import HTML
 
 
 def rng_generator(master_seed=1):
@@ -68,10 +68,10 @@ def get_simulation_hash(sim):
     return hash(to_hash)
 
 
-def inspect_module(module):
-    """Inspect a Python module and return the syntax highlighted code
-    """
-    formatter = HtmlFormatter()
-    display(HTML(f'<style>{formatter.get_style_defs(".highlight")}</style>'))
-
-    return Code(inspect.getsource(module), language='python')
+# def inspect_module(module):
+#     """Inspect a Python module and return the syntax highlighted code
+#     """
+#     formatter = HtmlFormatter()
+#     display(HTML(f'<style>{formatter.get_style_defs(".highlight")}</style>'))
+# 
+#     return Code(inspect.getsource(module), language='python')

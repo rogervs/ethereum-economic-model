@@ -2,3 +2,4 @@ cadCAD==0.4.23
 radcad==0.8.0  # A cadCAD model execution engine / reference implementation
 stochastic==0.6.0
 cadCAD_tools==0.0.1.4
+jupyter_dash
