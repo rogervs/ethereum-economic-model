@@ -96,7 +96,6 @@ pio.templates["cadlabs"] = go.layout.Template(
             'arrowhead': 0, 
             'arrowwidth': 1
             },
-    layout_autotypenumbers='strict',
     layout_coloraxis={
             'colorbar': {
                 'outlinewidth': 0, 
