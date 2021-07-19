@@ -1,14 +1,14 @@
 import requests
-import diskcache
+# import diskcache
 import logging
 
 from model.types import Gwei
 
 
-cache = diskcache.Cache('.beaconchain_api.cache')
+# cache = diskcache.Cache('.beaconchain_api.cache')
 
 
-@cache.memoize(expire=(6 * 60 * 60))  # cached for 6 hours
+# @cache.memoize(expire=(6 * 60 * 60))  # cached for 6 hours
 def get_epoch_data(epoch="latest"):
     try:
         req = requests.get(f"https://beaconcha.in/api/v1/epoch/{epoch}", headers={"accept":"application/json"})
