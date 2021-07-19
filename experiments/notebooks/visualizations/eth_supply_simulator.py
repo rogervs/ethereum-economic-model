@@ -220,12 +220,12 @@ def run_eth_supply_simulator(execution_mode=None):
     or "jupyterlab" mode when using Jupyter Lab:
     `run_eth_supply_simulator()`
     '''
-    processes = psutil.Process().parent().cmdline()
-    is_jupyter_lab = any('lab' in p for p in processes)
-    if execution_mode:
-        pass
-    elif is_jupyter_lab:
-        execution_mode = 'jupyterlab'
-    else:
-        execution_mode = 'inline'
-    app.run_server(mode=execution_mode, height=1200, debug=False)
+    # processes = psutil.Process().parent().cmdline()
+    # is_jupyter_lab = any('lab' in p for p in processes)
+    # if execution_mode:
+    #     pass
+    # elif is_jupyter_lab:
+    #     execution_mode = 'jupyterlab'
+    # else:
+    #     execution_mode = 'inline'
+    app.run_server(mode='inline',debug=True)
