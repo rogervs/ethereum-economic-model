@@ -15,7 +15,7 @@ from experiments.notebooks.visualizations.plotly_theme import (
 from model.system_parameters import parameters, validator_environments
 
 # Set plotly as the default plotting backend for pandas
-pd.options.plotting.backend = "plotly"
+# pd.options.plotting.backend = "plotly"
 
 validator_environment_name_mapping = {
     "custom": "Custom",
